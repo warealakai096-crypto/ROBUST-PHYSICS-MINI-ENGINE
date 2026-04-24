@@ -14,7 +14,10 @@ public:    double x, y, z;
     Vector3 operator-(const Vector3& other) const;
     Vector3 operator*(double scalar) const;
 
+        double length() const;
+
     void print( const std::string &label = "" ) const; 
+    Vector3 normalized() const ;
 };  
 
 
